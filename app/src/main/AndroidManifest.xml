@@ -22,6 +22,11 @@
         android:theme="@style/Theme.Mediclick"
         tools:targetApi="31">
         <activity
+            android:name=".NA2"
+            android:exported="false"
+            android:label="Nutritional Analysis 2"
+            tools:ignore="Instantiatable" />
+        <activity
             android:name=".ER2"
             android:exported="false" />
         <activity
@@ -75,10 +80,6 @@
         <activity
             android:name=".YogaAndMeditation"
             android:label="Yoga and Meditation"
-            tools:ignore="Instantiatable" />
-        <activity
-            android:name=".NA2"
-            android:label="Nutritional Analysis 2"
             tools:ignore="Instantiatable" />
         <activity
             android:name=".NA3"
