@@ -15,6 +15,7 @@ open class FeatureActivity : SignupActivity() {
         val myButtona: ImageView = findViewById(R.id.imageView112)
         val myButtonb: ImageView = findViewById(R.id.imageView114)
         val myButtonc: ImageView = findViewById(R.id.imageView115)
+        val myButtond: ImageView = findViewById(R.id.imageView116)
 
         // Set onClickListener for the button
 
@@ -31,6 +32,11 @@ open class FeatureActivity : SignupActivity() {
         myButtonc.setOnClickListener {
             // Handle the click event, e.g., start a new activity
             val intent = Intent(this, ER1::class.java)
+            startActivity(intent)
+        }
+        myButtond.setOnClickListener {
+            // Handle the click event, e.g., start a new activity
+            val intent = Intent(this, IP1::class.java)
             startActivity(intent)
         }
 
