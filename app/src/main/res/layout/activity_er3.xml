@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ER1"
+    android:background="#FFDDCC"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-2dp">
+
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="748dp"
+        android:layout_height="1207dp"
+        android:layout_marginStart="-170dp"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/er_back" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Exercise Resource"
+        android:textColor="#B70404"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView36"
+        app:layout_constraintStart_toStartOf="@+id/imageView36"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/exerciseTypeSpinner"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="100dp"
+        android:paddingStart="50dp"
+        android:autofillHints="Exercise Type"
+        android:background="@drawable/erc3"
+        android:entries="@array/exercise_types"
+        android:padding="8dp"
+        android:prompt="@string/exercise_type_hint"
+        app:layout_constraintBottom_toTopOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/targetedMuscleSpinner"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:autofillHints="Exercise Type"
+        android:background="@drawable/erc1"
+        android:paddingStart="50dp"
+        android:entries="@array/targeted_muscles"
+        android:padding="8dp"
+        android:prompt="@string/targeted_muscles_hint"
+        app:layout_constraintBottom_toTopOf="@+id/exerciseDiffSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/exerciseDiffSpinner"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="25dp"
+        android:paddingStart="50dp"
+        android:autofillHints="Exercise Type"
+        android:textColor="#eeedf2"
+        android:background="@drawable/erc2"
+        android:entries="@array/exercise_difficulty"
+        android:padding="8dp"
+        android:prompt="@string/exercise_difficulty_hint"
+        app:layout_constraintBottom_toTopOf="@+id/exerciseTypeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="339dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/er_line2" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="272dp"
+        android:layout_height="245dp"
+        app:layout_constraintBottom_toTopOf="@+id/targetedMuscleSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36"
+        app:srcCompat="@drawable/exercise1" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/erc5" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

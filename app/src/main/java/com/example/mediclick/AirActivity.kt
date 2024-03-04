@@ -11,7 +11,7 @@ open class AirActivity : FeatureActivity() {
         setContentView(R.layout.activity_air)
 
         // Assuming you have a button with the ID "myButton" in your activity_page0.xml layout
-        val myButton: ImageView = findViewById(R.id.imageView16)
+        val myButton: ImageView = findViewById(R.id.imageView4)
 
         // Set onClickListener for the button
         myButton.setOnClickListener {

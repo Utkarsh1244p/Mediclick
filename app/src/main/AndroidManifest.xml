@@ -22,13 +22,19 @@
         android:theme="@style/Theme.Mediclick"
         tools:targetApi="31">
         <activity
+            android:name=".ER2"
+            android:exported="false" />
+        <activity
             android:name=".ER1"
-            android:exported="true"
+            android:exported="false"
             tools:ignore="Instantiatable" />
-    <activity
+        <activity
+            android:name=".NA1"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false"
-        tools:ignore="Instantiatable" />
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Air2Activity"
             android:exported="false"
@@ -41,7 +47,6 @@
             android:name=".MainActivity"
             android:label="Mediclick"
             tools:ignore="Instantiatable" />
-
 
         <meta-data
             android:name="com.google.android.youtube.API_KEY"
@@ -110,8 +115,8 @@
             tools:ignore="Instantiatable" />
         <activity
             android:name=".FeatureActivity"
-            android:label="Nutritional Analysis 3"
             android:exported="true"
+            android:label="Nutritional Analysis 3"
             tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -143,17 +148,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-<!--        <provider-->
-<!--            android:name="androidx.core.content.FileProvider"-->
-<!--            android:authorities="com.trend-oceans.file share.MainActivity.provider"-->
-<!--            android:exported="false"-->
-<!--            android:grantUriPermissions="true"-->
-<!--            tools:ignore="MissingClass">-->
-<!--            <meta-data-->
-<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
-<!--                android:resource="@xml/file_path" />-->
-<!--        </provider>-->
     </application>
 
 </manifest>
