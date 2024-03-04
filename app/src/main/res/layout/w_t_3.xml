@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0003A9F4">
+
+
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="215dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#000000"
+        android:text="@string/in_detail_descriptionn"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cPercTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cloudPercentageTextView"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/feelsLikeTextView"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/lato"
+        android:lineSpacingExtra="12sp"
+        android:textColor="#009688"
+        android:textColorHint="#0B0909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/windSpeedTextView"
+        app:layout_constraintEnd_toEndOf="@+id/userCityTextView"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/cPercTextView"
+        android:layout_width="187dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="87dp"
+        android:fontFamily="@font/alata"
+        android:lineSpacingExtra="24sp"
+        android:text="@string/cloud_coverage"
+        android:textColor="#673AB7"
+        android:textColorHint="#0B0909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hTextView"
+        app:layout_constraintVertical_bias="0.229"
+        tools:ignore="DuplicateIds,NotSibling,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/userCityTextView"
+        android:layout_width="359dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:fontFamily="@font/oleo_script_bold"
+        android:lineSpacingExtra="12sp"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="DuplicateIds,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/lato"
+        android:lineSpacingExtra="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#0B0909"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cloudPercentageTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hTextView"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedTextView"
+        tools:ignore="DuplicateIds,NotSibling,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/cloudPercentageTextView"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/lato"
+        android:lineSpacingExtra="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#0B0909"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidityTextView"
+        tools:ignore="DuplicateIds,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/windSpeedTextView"
+        android:layout_width="163dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/lato"
+        android:lineSpacingExtra="12sp"
+        android:textColor="@color/black"
+        android:textColorHint="#0B0909"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wSpeedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/feelsLikeTextView"
+        tools:ignore="DuplicateIds,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/hTextView"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="69dp"
+        android:fontFamily="@font/alata"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/humidity"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wSpeedTextView"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/wSpeedTextView"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alata"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/wind_speede"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/hTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelsLikeTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/ranibow_main"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFEB3B"
+        android:text="@string/weather_infor"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="62dp"
+        android:contentDescription="@string/todo5"
+        app:layout_constraintBottom_toTopOf="@+id/userCityTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/userCityTextView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/image1"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/windSpeedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userCityTextView">
+
+        <TextView
+            android:id="@+id/tempTextView"
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alata"
+            android:lineSpacingExtra="12sp"
+            android:text="@string/temperaturee"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/lato"
+            android:lineSpacingExtra="12sp"
+            android:textColor="@color/black"
+            android:textColorHint="#0B0909"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds,NotSibling,TextSizeCheck" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

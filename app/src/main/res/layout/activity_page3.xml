@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3FF"
+    tools:context=".Page3Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="94dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/gr3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="75dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="285dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/weather1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="SkySync"
+        android:textColor="#0A603A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="256dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="85dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text=" Stay ahead of the elements with SkySync – your weather companion. Instant forecasts, real-time updates. Your pocket meteorologist for a seamless day."
+        android:textAlignment="textStart"
+        android:textColor="#3A403D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
