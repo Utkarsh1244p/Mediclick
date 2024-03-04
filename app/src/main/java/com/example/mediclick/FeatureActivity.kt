@@ -11,16 +11,12 @@ open class FeatureActivity : SignupActivity() {
         setContentView(R.layout.activity_feature)
 
         // Assuming you have a button with the ID "myButton" in your activity_page0.xml layout
-        val myButtona: ImageView = findViewById(R.id.imageView112)
+
         val myButtonb: ImageView = findViewById(R.id.imageView114)
         val myButtonc: ImageView = findViewById(R.id.imageView115)
 
         // Set onClickListener for the button
-        myButtona.setOnClickListener {
-            // Handle the click event, e.g., start a new activity
-            val intent = Intent(this, NutritionalAnalysis::class.java)
-            startActivity(intent)
-        }
+
         myButtonb.setOnClickListener {
             // Handle the click event, e.g., start a new activity
             val intent = Intent(this, AirActivity::class.java)
