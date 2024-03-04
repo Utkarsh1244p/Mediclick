@@ -23,26 +23,24 @@
         tools:targetApi="31">
         <activity
             android:name=".ER1"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
+            android:exported="true"
+            tools:ignore="Instantiatable" />
     <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="false"
+        tools:ignore="Instantiatable" />
         <activity
             android:name=".Air2Activity"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".AirActivity"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".MainActivity"
-            android:label="Mediclick" />
+            android:label="Mediclick"
+            tools:ignore="Instantiatable" />
 
 
         <meta-data
@@ -51,83 +49,111 @@
 
         <activity
             android:name=".HealthTipsActivity"
-            android:label="Health Tips" />
+            android:label="Health Tips"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".NutritionalAnalysis"
-            android:label="Nutritional Analysis" /> <!-- <activity -->
+            android:label="Nutritional Analysis"
+            tools:ignore="Instantiatable" /> <!-- <activity -->
         <!-- android:name=".ER1" -->
         <!-- android:label="Exercise Resources" /> -->
         <activity
             android:name=".WT1"
-            android:label="Weather Tips" />
+            android:label="Weather Tips"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".WT2"
-            android:label="Weather Tips" /> <!-- <activity -->
+            android:label="Weather Tips"
+            tools:ignore="Instantiatable" /> <!-- <activity -->
         <!-- android:name=".WT3" -->
         <!-- android:label="Weather Tips" /> -->
         <activity
             android:name=".YogaAndMeditation"
-            android:label="Yoga and Meditation" />
+            android:label="Yoga and Meditation"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".NA2"
-            android:label="Nutritional Analysis 2" />
+            android:label="Nutritional Analysis 2"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".NA3"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".CodyAI"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Page0Activity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Page1Activity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Page2Activity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".SignupActivity"
-            android:label="sign up" />
+            android:label="sign up"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".SignMainActivity"
             android:exported="false"
-            android:label="Sign in" />
+            android:label="Sign in"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".LoginActivity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".FeatureActivity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Page3Activity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Page4Activity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Page5Activity"
-            android:label="Nutritional Analysis 3" />
+            android:label="Nutritional Analysis 3"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".presentation.activity.BMI"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".presentation.activity.ResultActivity"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.trend-oceans.file share.MainActivity.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_path" />
-        </provider>
+<!--        <provider-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:authorities="com.trend-oceans.file share.MainActivity.provider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            tools:ignore="MissingClass">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_path" />-->
+<!--        </provider>-->
     </application>
 
 </manifest>
