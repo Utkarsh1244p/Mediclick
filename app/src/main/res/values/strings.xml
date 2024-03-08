@@ -153,6 +153,7 @@
         <item>Expert</item>
     </string-array>
     <string name="exercise_difficulty_hint">Exercise Difficulty</string>
+    <string name="default_web_client_id" />
 
     <string-array name="default_array">
         <item name="1">1</item>

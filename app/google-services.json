@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311375949767",
+    "project_id": "my-awesome-app-37223",
+    "storage_bucket": "my-awesome-app-37223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311375949767:android:cda153f23c872686cc73e2",
+        "android_client_info": {
+          "package_name": "com.example.mediclick"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqsSe4h1t-iIQl1sTiLAn5SLbVPxiH8zc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
